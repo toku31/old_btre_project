@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+from django.contrib.messages import constants as messages
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -137,7 +138,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 # Messages
-from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
@@ -148,4 +148,3 @@ MESSAGE_TAGS = {
 # EMAIL_HOST_USER='Gメールアドレス'
 # EMAIL_HOST_PASSWORD='パスワード'
 # EMAIL_USE_TLS=True
-
